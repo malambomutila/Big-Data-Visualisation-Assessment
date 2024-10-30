@@ -1,12 +1,46 @@
-# Big-Data-Visualisation-Assessment
-Technical Assessment: ZNPHI Public Health Intelligence Officer – Bioinformatics &amp; Big Data Visualization
+## Technical Assessment: ZNPHI Public Health Intelligence Officer – Bioinformatics & Big Data Visualization
 
-## Project Overview
+### Overview
+This repository contains the technical assessment for the ZNPHI Public Health Intelligence Officer position, focusing on Bioinformatics and Big Data Visualisation. It includes data analysis scripts, visualisations, and summary reports for public health data.
 
-This project reproduces an example Epidemiological Bulletin for the ZNPHI Public Health Intelligence Officer role, focusing on Bioinformatics and Big Data Visualization. The solution is developed in Python, automating data loading, exploration, analysis, and visualization.
+### Project Structure
+- **data/**: Contains the input datasets (e.g., maternal deaths, measles lab). [ignored and not uploaded]
+- **task/**: Stores various project tasks. [ignored and not uploaded]
+- **bigdata_env/**: Virtual environment to ensure consistency across machines.
+- **malambo.ipynb**: Jupyter Notebook for the analysis and visualization of data.
+- **README.md**: Project documentation.
 
-## Directory Structure
+### Setup Instructions
+1. **Clone the repository**:
+    
+    git clone https://github.com/malambomutila/Big-Data-Visualisation-Assessment.git
+    
+   
+2. **Set up the virtual environment**:
+    ```sh
+    python -m venv bigdata_env
+    source bigdata_env/bin/activate  # For Linux/Mac
+    bigdata_env\Scripts\activate     # For Windows
+    ```
 
-project-root/ ├── bigdata_env/ # Virtual environment folder (not included in version control) ├── data/ # Data files used in analysis (not included in version control) ├── task/ # Additional task files (if any) ├── malambo.ipynb # Main Jupyter Notebook containing the analysis and visualizations ├── requirements.txt # Python dependencies file ├── .gitignore # Git ignore file to exclude unnecessary files from version control ├── README.md # Project documentation └── LICENSE # License file
+3. **Install dependencies**:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+### Running the Analysis
+1. Activate the virtual environment as described above.
+2. Launch Jupyter Notebook to run the analysis scripts:
+    ```sh
+    jupyter notebook malambo.ipynb
+    ```
+
+### Technical Details
+The analysis is carried out using key libraries, such as:
+- **Pandas** for data manipulation.
+- **Matplotlib** and **Seaborn** for data visualization.
+- **GeoPandas** and **Folium** for spatial data analysis.
+
+
 
 
